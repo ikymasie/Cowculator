@@ -79,9 +79,14 @@ public class DialogMissingWeights extends DialogFragment implements OnEditTextCh
 
     @Override
     public void onTextChanged(int position, String charSeq) {
+        try{
         CowPortion currentEdit = myPortions.get(position);
         currentEdit.Weight = Double.parseDouble(charSeq);
         Log.d("EDIT", currentEdit.Name  + " now wieghs " + charSeq);
+        }
+        catch (Exception e){
+            Log.d("Error",e.getMessage());
+        }
 
     }
 
