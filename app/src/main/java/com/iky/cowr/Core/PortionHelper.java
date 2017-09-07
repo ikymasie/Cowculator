@@ -37,6 +37,26 @@ public class PortionHelper {
             Data.add(tbl_portions.get(i));
         }
     }
+    public ArrayList<CowPortion> getItemsRequiringPPKG(){
+        ArrayList<CowPortion> list = new ArrayList<>();
+        for(int i =0;i<Data.size();i++){
+         CowPortion x= Data.get(i);
+            if(x.IsPerKg){
+                list.add(x);
+            }
+        }
+        return  list;
+    }
+    public ArrayList<CowPortion> getFixedPriceItems(){
+        ArrayList<CowPortion> list = new ArrayList<>();
+        for(int i =0;i<Data.size();i++){
+            CowPortion x= Data.get(i);
+            if(!x.IsPerKg){
+                list.add(x);
+            }
+        }
+        return  list;
+    }
     public   void SaveNewPortion(CowPortion c){
         dbContext.put(c).now();
     }

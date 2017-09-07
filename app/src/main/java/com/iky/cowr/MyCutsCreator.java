@@ -64,9 +64,10 @@ public class MyCutsCreator extends AppCompatActivity {
                     return false;
                 }
                 else{
-
+                    new PreferenceManager(MyCutsCreator.this).SetCarcusKG(txtBeefPPKG.getText().toString());
                 }
 
+                Double c = new PreferenceManager(MyCutsCreator.this).GetCarcusPKG();
                 this.setResult(RESULT_OK);
                 this.finish();
                 break;

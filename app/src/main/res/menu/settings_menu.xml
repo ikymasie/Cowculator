@@ -7,4 +7,9 @@
         android:icon="@drawable/ic_settings"
         app:showAsAction="always"
         android:title="Settings"/>
+    <item
+        android:id="@+id/action_modes"
+        android:icon="@drawable/ic_cleaver_knife"
+        app:showAsAction="always"
+        android:title="Modes"/>
 </menu>
