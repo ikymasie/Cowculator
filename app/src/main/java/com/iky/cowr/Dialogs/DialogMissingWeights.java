@@ -106,7 +106,7 @@ public class DialogMissingWeights extends DialogFragment implements OnEditTextCh
     public class btnCancelListner implements View.OnClickListener{
         @Override
         public void onClick(View view) {
-            instance.dismiss();
+            parent.CancelDialogWithActivity();
         }
     }
 

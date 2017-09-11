@@ -89,7 +89,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textV5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="8dp"
@@ -99,10 +99,10 @@
                     android:textSize="24sp" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/textV7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView5"
+                    android:layout_below="@+id/textV5"
                     android:layout_marginRight="60dp"
                     android:paddingBottom="12dp"
                     android:paddingLeft="8dp"
@@ -113,7 +113,7 @@
                     android:id="@+id/btnAddNewPortion"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/textView7"
+                    android:layout_below="@+id/textV7"
                     android:layout_margin="12dp"
                     android:background="@drawable/calc_reg_button_selector"
                     android:text="@string/add_new_portion"

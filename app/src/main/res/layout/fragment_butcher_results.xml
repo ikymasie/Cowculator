@@ -64,14 +64,14 @@
 
             <TextView
                 android:id="@+id/textView"
+                fontPath="fonts/RobotoBold.ttf"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_above="@+id/lblAmount"
                 android:layout_centerHorizontal="true"
-                android:text="GRADE A BEEF GIVES:"
-                android:textColor="@color/icons"
+                android:text="ACCEPTABLE OFFER (Grade A)"
 
-                fontPath="fonts/RobotoBold.ttf"
+                android:textColor="@color/icons"
                 android:textStyle="bold" />
 
         </RelativeLayout>

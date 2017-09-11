@@ -45,6 +45,8 @@ public class MyCutsCreator extends AppCompatActivity {
         list.setLayoutManager(new GridLayoutManager(this,3));
         adapter =new PortionAdapter(this,PortionHelper.getInstance(MyCutsCreator.this).Data);
         list.setAdapter(adapter);
+        String price = String.valueOf( new PreferenceManager(this).GetCarcusPKG());
+        txtBeefPPKG.setText(price);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

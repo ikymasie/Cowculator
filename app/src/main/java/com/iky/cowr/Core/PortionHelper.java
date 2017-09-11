@@ -1,10 +1,12 @@
 package com.iky.cowr.Core;
 
 import android.content.Context;
+import android.util.Log;
 
 import com.iky.cowr.Model.CowPortion;
 import com.noodle.Noodle;
 import com.noodle.collection.Collection;
+import com.noodle.description.Description;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -29,7 +31,8 @@ public class PortionHelper {
     }
     private PortionHelper(Context ctx) {
         context = ctx;
-        db= Noodle.with(context).addType(CowPortion.class).build();
+        db= Noodle.with(context).addType(Description.of(CowPortion.class).withIdField("id").build()).build();
+
         dbContext =db.collectionOf(CowPortion.class);
         tbl_portions =(List<CowPortion>) dbContext.all().now();
         Data = new ArrayList<CowPortion>();
@@ -60,8 +63,24 @@ public class PortionHelper {
     public   void SaveNewPortion(CowPortion c){
         dbContext.put(c).now();
     }
-    public   void DeletePortion(long c){
-        dbContext.delete(c).now();
+    public   boolean DeletePortion(long c){
+        if(dbContext!=null) {
+           CowPortion d= Data.get(0);
+            try {
+
+              dbContext.delete(c).now();
+            return true;
+            }
+            catch (NullPointerException e){
+            return false;
+            }
+            catch (RuntimeException e){
+                 Log.d("Error",e.getMessage());
+                return  false;
+            }
+        }else{
+            return false;
+        }
     }
     public  void GetPortion(long c){
         dbContext.get(c).now();

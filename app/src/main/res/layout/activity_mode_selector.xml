@@ -79,7 +79,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/textView9223"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textView6"
@@ -93,7 +93,7 @@
                 android:textColor="@color/secondary_text" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imageView3999"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_alignParentEnd="true"
@@ -116,7 +116,7 @@
             android:background="@drawable/list_selector">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView232"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_centerVertical="true"
@@ -125,11 +125,11 @@
                 app:srcCompat="@drawable/ic_live_cuts_icons" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textVie"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="false"
-                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageView232"
                 android:paddingLeft="8dp"
                 android:paddingTop="24dp"
                 android:text="@string/title_button_livemode"
@@ -140,8 +140,8 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView6"
-                android:layout_toRightOf="@+id/imageView2"
+                android:layout_below="@+id/textVie"
+                android:layout_toRightOf="@+id/imageView232"
                 android:ellipsize="end"
                 android:lines="1"
                 android:maxLines="1"
@@ -151,7 +151,7 @@
                 android:textColor="@color/secondary_text" />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/imaiew03"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_alignParentEnd="true"
@@ -174,7 +174,7 @@
             android:background="@drawable/list_selector">
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageVw2"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_centerVertical="true"
@@ -183,11 +183,11 @@
                 app:srcCompat="@drawable/ic_custom_cuts_icons" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/textViw6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="false"
-                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toRightOf="@+id/imageVw2"
                 android:paddingLeft="8dp"
                 android:paddingTop="24dp"
                 android:text="@string/title_button_custommode"
@@ -195,11 +195,11 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/texew9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView6"
-                android:layout_toRightOf="@+id/imageView2"
+                android:layout_below="@+id/textViw6"
+                android:layout_toRightOf="@+id/imageVw2"
                 android:ellipsize="end"
                 android:lines="1"
                 android:maxLines="1"
